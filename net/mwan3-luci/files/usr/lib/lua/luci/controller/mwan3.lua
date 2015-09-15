@@ -40,6 +40,7 @@ function index()
 		arcombine(cbi("mwan/rule"), cbi("mwan/ruleconfig")),
 		_("Rules"), 40).leaf = true
 
+	--[[
 	entry({"admin", "network", "mwan", "advanced"},
 		alias("admin", "network", "mwan", "advanced", "hotplugscript"),
 		_("Advanced"), 100)
@@ -57,6 +58,7 @@ function index()
 		template("mwan/advanced_troubleshooting"))
 	entry({"admin", "network", "mwan", "advanced", "troubleshooting_display"},
 		call("troubleshootingData"))
+	--]]
 end
 
 function getInterfaceStatus(ruleNumber, interfaceName)
