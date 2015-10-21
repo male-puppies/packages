@@ -2,7 +2,9 @@
 
 <ul class="cbi-tabmenu">
 	<li class="cbi-tab"><a href="<%=luci.dispatcher.build_url("admin/network/mwan/overview")%>"><%:Interface Status%></a></li>
+	<% if false then %>
 	<li class="cbi-tab-disabled"><a href="<%=luci.dispatcher.build_url("admin/network/mwan/overview/overview_detailed")%>"><%:Detailed Status%></a></li>
+	<% end %>
 </ul>
 
 <script type="text/javascript" src="<%=resource%>/cbi.js"></script>
@@ -68,10 +70,12 @@
 		<legend><%:MWAN Interface Live Status%></legend>
 		<div id="mwan_status_text"><img src="<%=resource%>/icons/loading.gif" alt="<%:Loading%>" style="vertical-align:middle" /> Collecting data...</div>
 	</fieldset>
+	<% if false then %>
 	<fieldset class="cbi-section">
 		<legend><%:MWAN Interface Systemlog%></legend>
 		<div id="mwan_statuslog_text"><img src="<%=resource%>/icons/loading.gif" alt="<%:Loading%>" style="vertical-align:middle" /> Collecting data...</div>
 	</fieldset>
+	<% end %>
 </div>
 
 <style type="text/css">
