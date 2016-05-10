@@ -1,0 +1,13 @@
+diff --git a/configure b/configure
+index adfc1ec..7b22654 100755
+--- a/configure
++++ b/configure
+@@ -15062,7 +15062,7 @@ else
+   if test "$cross_compiling" = yes; then :
+   { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: cannot check job control if cross-compiling -- defaulting to missing" >&5
+ $as_echo "$as_me: WARNING: cannot check job control if cross-compiling -- defaulting to missing" >&2;}
+-     bash_cv_job_control_missing=missing
++     bash_cv_job_control_missing=present
+ 
+ else
+   cat confdefs.h - <<_ACEOF >conftest.$ac_ext
